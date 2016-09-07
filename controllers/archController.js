@@ -12,11 +12,8 @@ var archController = function(Architecture){
       }
   };
     var get = function(req, res){
-        var query={};
-
-        if(req.query.function){
-            query.function= req.query.function ;
-        }
+        var query=req.query;
+         //pull  query string off of request
 
         Architecture.find( query, function(err, arch){
             if(err){
@@ -83,6 +80,6 @@ var archController = function(Architecture){
             patch:patch,
             remove:remove
         }
-}
+};
 
 module.exports = archController;
