@@ -34,8 +34,8 @@ var routes = function(Architecture){
     archRouter.route('/:id'  )
         .get( securityCheck, archController.getById)
         .put( securityCheck, archController.put)
-        .patch(securityCheck,  archController.patch)
-        .delete(securityCheck,archController.remove) ;
+        .patch(securityCheck, archController.patch)
+        .delete(securityCheck, archController.remove) ;
 
 
 
