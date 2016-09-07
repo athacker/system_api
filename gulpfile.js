@@ -20,5 +20,5 @@ gulp.task('default',function(){
 gulp.task('test', function(){
     process.env.ENV = 'test';
     env({vars:{ENV:'test'}});//prod dev local test
-    gulp.src('tests/*.js', {read: false}).pipe(gulpMocha({reporter: 'nyan'}))
+    gulp.src('test/*.js', {read: false}).pipe(gulpMocha({reporter: 'nyan'}))
 });

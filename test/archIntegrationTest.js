@@ -123,7 +123,7 @@ describe('Crud Test', function(){
 
 
     afterEach(function(done){
-    //    Architecture.remove().exec();
+       // Architecture.remove().exec();
         done();
     });
 
