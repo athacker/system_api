@@ -4,7 +4,7 @@
   "description": "back end api for system documentation",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
